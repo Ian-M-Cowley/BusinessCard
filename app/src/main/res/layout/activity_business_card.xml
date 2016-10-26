@@ -44,13 +44,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         app:popupTheme="@style/AppTheme.PopupOverlay"
+                        android:title='@{String.format("%s %s", businessCard.firstName, businessCard.lastName)}'
+                        android:subtitle="@{businessCard.title}"
                         app:layout_collapseMode="pin"/>
 
                 </android.support.design.widget.CollapsingToolbarLayout>
 
             </android.support.design.widget.AppBarLayout>
 
-            <include layout="@layout/content_business_card"
+            <include
+                android:id="@+id/content"
+                layout="@layout/content_business_card"
                 bind:businessCard="@{businessCard}"/>
         </LinearLayout>
 

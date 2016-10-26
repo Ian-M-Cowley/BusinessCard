@@ -12,6 +12,7 @@ public class BusinessCard {
     public final String workPhone;
     public final String personalEmail;
     public final String workEmail;
+    public final String title;
 
     private BusinessCard(BusinessCard.Builder builder) {
         this.firstName = builder.firstName;
@@ -20,6 +21,7 @@ public class BusinessCard {
         this.workPhone = builder.workPhone;
         this.personalEmail = builder.personalEmail;
         this.workEmail = builder.workEmail;
+        this.title = builder.title;
     }
 
     public static class Builder {
@@ -29,6 +31,7 @@ public class BusinessCard {
         private String workPhone;
         private String personalEmail;
         private String workEmail;
+        private String title;
 
         public Builder firstName(String firstName) {
             this.firstName = firstName;
@@ -57,6 +60,11 @@ public class BusinessCard {
 
         public Builder workEmail(String email) {
             this.workEmail = email;
+            return this;
+        }
+
+        public Builder title(String title) {
+            this.title = title;
             return this;
         }
 

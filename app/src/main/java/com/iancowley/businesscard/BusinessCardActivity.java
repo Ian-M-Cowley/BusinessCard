@@ -23,12 +23,10 @@ public class BusinessCardActivity extends AppCompatActivity {
                 .workPhone("555.555.5555")
                 .personalEmail("ian.m.cowley15@gmail.com")
                 .workEmail("ian@planoly.com")
+                .title("Senior Mobile Engineer")
                 .build();
 
-        binding.toolbar.setTitle(String.format("%s %s", businessCard.firstName, businessCard.lastName));
-        setSupportActionBar(binding.toolbar);
-
-
         binding.setBusinessCard(businessCard);
+        setSupportActionBar(binding.toolbar);
     }
 }
