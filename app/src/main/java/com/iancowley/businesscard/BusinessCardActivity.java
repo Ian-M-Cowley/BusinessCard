@@ -20,10 +20,10 @@ public class BusinessCardActivity extends AppCompatActivity {
                 .firstName("Ian")
                 .lastName("Cowley")
                 .mobilePhone("972.838.6504")
-                .workPhone("555.555.5555")
                 .personalEmail("ian.m.cowley15@gmail.com")
                 .workEmail("ian@planoly.com")
                 .title("Senior Mobile Engineer")
+                .qrCodeInfo("https://www.google.com")
                 .build();
 
         binding.setBusinessCard(businessCard);

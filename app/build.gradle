@@ -14,6 +14,7 @@ ext {
     // 3rd Party Libraries
     SUPPORT_LIB_VERSION="25.0.0"
     BUTTERKNIFE_VERSION="8.4.0"
+    QR_GEN_VERSION="2.2.0"
 }
 
 android {
@@ -49,6 +50,8 @@ dependencies {
 
     compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
     apt "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+
+    compile "com.github.kenglxn.QRGen:android:$QR_GEN_VERSION"
 
     testCompile 'junit:junit:4.12'
 }

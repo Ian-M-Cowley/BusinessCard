@@ -13,6 +13,7 @@ public class BusinessCard {
     public final String personalEmail;
     public final String workEmail;
     public final String title;
+    public final String qrCodeInfo;
 
     private BusinessCard(BusinessCard.Builder builder) {
         this.firstName = builder.firstName;
@@ -22,6 +23,7 @@ public class BusinessCard {
         this.personalEmail = builder.personalEmail;
         this.workEmail = builder.workEmail;
         this.title = builder.title;
+        this.qrCodeInfo = builder.qrCodeInfo;
     }
 
     public static class Builder {
@@ -32,6 +34,7 @@ public class BusinessCard {
         private String personalEmail;
         private String workEmail;
         private String title;
+        private String qrCodeInfo;
 
         public Builder firstName(String firstName) {
             this.firstName = firstName;
@@ -65,6 +68,11 @@ public class BusinessCard {
 
         public Builder title(String title) {
             this.title = title;
+            return this;
+        }
+
+        public Builder qrCodeInfo(String info) {
+            this.qrCodeInfo = info;
             return this;
         }
 
