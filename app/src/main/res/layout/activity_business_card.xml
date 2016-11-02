@@ -15,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="com.iancowley.businesscard.BusinessCardActivity">
+        tools:context="com.iancowley.businesscard.BusinessCardActivity"
+        android:background="@android:color/white">
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
@@ -29,6 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"
+                android:title='@{String.format("%s %s", businessCard.firstName, businessCard.lastName)}'
                 app:contentScrim="?attr/colorPrimary"
                 app:expandedTitleMarginEnd="@dimen/text_margin"
                 app:expandedTitleMarginStart="@dimen/text_margin"
@@ -38,7 +40,6 @@
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:title='@{String.format("%s %s", businessCard.firstName, businessCard.lastName)}'
                     app:layout_collapseMode="pin"
                     app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
