@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.iancowley.businesscard.injection.PropertiesReader;
+
 /**
  * Created by iancowley on 10/24/16.
  */
@@ -49,13 +51,16 @@ public class BusinessCardActivityNoBinding extends AppCompatActivity {
         workEmail = (TextView) findViewById(R.id.text_email_work);
         workEmailIcon = (ImageView) findViewById(R.id.image_work_email);
 
+        PropertiesReader propertiesReader = new PropertiesReader(this);
         businessCard = new BusinessCard.Builder()
-                .firstName("Ian")
-                .lastName("Cowley")
-                .mobilePhone("972.838.6504")
-                .workPhone("555.555.5555")
-                .personalEmail("ian.m.cowley15@gmail.com")
-                .workEmail("ian@planoly.com")
+                .firstName(propertiesReader.getProperty("firstName"))
+                .lastName(propertiesReader.getProperty("lastName"))
+                .mobilePhone(propertiesReader.getProperty("mobilePhone"))
+                .workPhone(propertiesReader.getProperty("workPhone"))
+                .personalEmail(propertiesReader.getProperty("personalEmail"))
+                .workEmail(propertiesReader.getProperty("workEmail"))
+                .title(propertiesReader.getProperty("title"))
+                .qrCodeInfo(propertiesReader.getProperty("qrCodeInfo"))
                 .build();
 
         toolbar.setTitle(businessCard.firstName + " " + businessCard.lastName);

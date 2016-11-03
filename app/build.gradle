@@ -15,6 +15,7 @@ ext {
     SUPPORT_LIB_VERSION="25.0.0"
     BUTTERKNIFE_VERSION="8.4.0"
     QR_GEN_VERSION="2.2.0"
+    DAGGER_VERSION="2.7"
 }
 
 android {
@@ -52,6 +53,9 @@ dependencies {
     apt "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
 
     compile "com.github.kenglxn.QRGen:android:$QR_GEN_VERSION"
+
+    compile "com.google.dagger:dagger:$DAGGER_VERSION"
+    apt "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
 
     testCompile 'junit:junit:4.12'
 }

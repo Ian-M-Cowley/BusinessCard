@@ -16,19 +16,19 @@ public class BusinessCard {
     public final String qrCodeInfo;
 
     private BusinessCard(BusinessCard.Builder builder) {
-        this.firstName = builder.firstName;
-        this.lastName = builder.lastName;
-        this.mobilePhone = builder.mobilePhone;
-        this.workPhone = builder.workPhone;
-        this.personalEmail = builder.personalEmail;
-        this.workEmail = builder.workEmail;
-        this.title = builder.title;
-        this.qrCodeInfo = builder.qrCodeInfo;
+        this.firstName = builder.firstName == null ? "" : builder.firstName;
+        this.lastName = builder.lastName == null ? "" : builder.lastName;
+        this.mobilePhone = builder.mobilePhone == null ? "" : builder.mobilePhone;
+        this.workPhone = builder.workPhone == null ? "" : builder.workPhone;
+        this.personalEmail = builder.personalEmail == null ? "" : builder.personalEmail;
+        this.workEmail = builder.workEmail == null ? "" : builder.workEmail;
+        this.title = builder.title == null ? "" : builder.title;
+        this.qrCodeInfo = builder.qrCodeInfo == null ? "" : builder.qrCodeInfo;
     }
 
     public static class Builder {
-        private String firstName = "";
-        private String lastName = "";
+        private String firstName;
+        private String lastName;
         private String mobilePhone;
         private String workPhone;
         private String personalEmail;
