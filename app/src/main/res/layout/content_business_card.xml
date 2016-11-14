@@ -196,15 +196,7 @@
                         android:textColor="@color/textColorSecondary"/>
                 </LinearLayout>
 
-
             </RelativeLayout>
-
-            <ImageView
-                android:layout_marginTop="50dp"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_gravity="right"
-                app:qrcode="@{businessCard.qrCodeInfo}"/>
 
             <View
                 android:layout_width="1dp"

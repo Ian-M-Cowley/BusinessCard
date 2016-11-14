@@ -5,6 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <import type="android.view.View"/>
+
+        <import type="android.text.TextUtils"/>
 
         <variable
             name="businessCard"
@@ -60,6 +63,14 @@
             app:layout_anchor="@id/app_bar"
             app:layout_anchorGravity="bottom|end"
             app:srcCompat="@drawable/ic_plus_white_36dp"/>
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="right|bottom"
+            android:visibility="@{TextUtils.isEmpty(businessCard.qrCodeInfo) ? View.GONE : View.VISIBLE}"
+            app:qrcode="@{businessCard.qrCodeInfo}"/>
 
     </android.support.design.widget.CoordinatorLayout>
 </layout>
