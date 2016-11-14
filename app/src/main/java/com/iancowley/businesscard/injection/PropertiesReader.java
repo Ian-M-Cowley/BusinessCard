@@ -14,6 +14,15 @@ import java.util.Properties;
 
 public class PropertiesReader {
 
+    public static final String PROPERTY_FIRST_NAME = "firstName";
+    public static final String PROPERTY_LAST_NAME = "lastName";
+    public static final String PROPERTY_MOBILE_PHONE = "mobilePhone";
+    public static final String PROPERTY_WORK_PHONE = "workPhone";
+    public static final String PROPERTY_PERSONAL_EMAIL = "personalEmail";
+    public static final String PROPERTY_WORK_EMAIL = "workEmail";
+    public static final String PROPERTY_TITLE = "title";
+    public static final String PROPERTY_QR_CODE_INFO = "qrCodeInfo";
+
     protected Properties properties;
 
     public PropertiesReader(Context context) {
