@@ -12,7 +12,7 @@ ext {
     VERSION_NAME="1.0"
 
     // 3rd Party Libraries
-    SUPPORT_LIB_VERSION="25.0.0"
+    SUPPORT_LIB_VERSION="25.0.1"
     BUTTERKNIFE_VERSION="8.4.0"
     QR_GEN_VERSION="2.2.0"
     DAGGER_VERSION="2.7"
