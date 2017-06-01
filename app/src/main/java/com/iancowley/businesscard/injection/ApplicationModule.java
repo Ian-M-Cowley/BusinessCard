@@ -3,6 +3,8 @@ package com.iancowley.businesscard.injection;
 import android.app.Application;
 import android.content.Context;
 
+import com.iancowley.businesscard.ColorSettings;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -31,5 +33,11 @@ public class ApplicationModule {
     @Singleton
     public PropertiesReader providePropertyReader(Context context) {
         return new PropertiesReader(context);
+    }
+
+    @Provides
+    @Singleton
+    public ColorSettings provideColorSettings(Context context) {
+        return new ColorSettings(context);
     }
 }

@@ -1,6 +1,9 @@
 package com.iancowley.businesscard;
 
+import android.content.res.ColorStateList;
 import android.databinding.BindingAdapter;
+import android.support.annotation.ColorInt;
+import android.support.design.widget.FloatingActionButton;
 import android.text.TextUtils;
 import android.widget.ImageView;
 
@@ -19,4 +22,10 @@ public class BusinessCardBindingAdapter {
         }
         view.setImageBitmap(QRCode.from(codeInfo).bitmap());
     }
+
+    @BindingAdapter("fabBackground")
+    public static void setFabBackground(FloatingActionButton fab, @ColorInt int color) {
+        fab.setBackgroundTintList(ColorStateList.valueOf(color));
+    }
+
 }

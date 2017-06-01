@@ -21,6 +21,7 @@ import static com.iancowley.businesscard.injection.PropertiesReader.PROPERTY_WOR
 public class BusinessCardActivity extends AppCompatActivity {
 
     @Inject PropertiesReader propertiesReader;
+    @Inject ColorSettings colorSettings;
 
     private BusinessCard businessCard;
 
@@ -44,6 +45,7 @@ public class BusinessCardActivity extends AppCompatActivity {
                 .build();
 
         binding.setBusinessCard(businessCard);
+        binding.setColorSettings(colorSettings);
         setSupportActionBar(binding.toolbar);
     }
 }

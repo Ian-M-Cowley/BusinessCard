@@ -3,4 +3,9 @@
     <string name="mobile">Mobile</string>
     <string name="personal">Personal</string>
     <string name="work">Work</string>
+    <string name="settings">Settings</string>
+
+    <string name="primary_dark_color">Primary Dark Color</string>
+    <string name="primary_color">Primary Color</string>
+    <string name="accent_color">Accent Color</string>
 </resources>

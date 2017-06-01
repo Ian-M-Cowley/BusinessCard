@@ -2,6 +2,7 @@ package com.iancowley.businesscard.injection;
 
 import com.iancowley.businesscard.BusinessCardActivity;
 import com.iancowley.businesscard.BusinessCardApplication;
+import com.iancowley.businesscard.SettingsActivity;
 
 import javax.inject.Singleton;
 
@@ -16,4 +17,5 @@ import dagger.Component;
 public interface ApplicationComponent {
     void inject(BusinessCardApplication target);
     void inject(BusinessCardActivity target);
+    void inject(SettingsActivity target);
 }

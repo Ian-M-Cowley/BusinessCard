@@ -8,4 +8,6 @@
     <color name="textColorSecondary">#8A000000</color>
 
     <color name="dividerGrey">#22000000</color>
+
+    <color name="blue">#00F</color>
 </resources>

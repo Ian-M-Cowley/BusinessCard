@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:shortcutShortLabel="@string/settings"
+        android:shortcutLongLabel="@string/settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.iancowley.businesscard"
+            android:targetClass="com.iancowley.businesscard.SettingsActivity" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>
+
