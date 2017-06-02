@@ -25,6 +25,9 @@
         <activity
             android:name=".SettingsActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ColorSelectActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 

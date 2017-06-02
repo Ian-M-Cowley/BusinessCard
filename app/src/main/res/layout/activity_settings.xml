@@ -23,8 +23,9 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@{colorSettings.primaryColor}"
-            android:title="@string/settings"
+            android:elevation="10dp"
             android:theme="@style/AppTheme.AppBarOverlay"
+            android:title="@string/settings"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
         <RelativeLayout

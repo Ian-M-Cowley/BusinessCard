@@ -8,4 +8,308 @@
     <string name="primary_dark_color">Primary Dark Color</string>
     <string name="primary_color">Primary Color</string>
     <string name="accent_color">Accent Color</string>
+    <string name="select_a_color">Select a color</string>
+
+    <!-- Primary Dark Color Names -->
+    <string-array name="primary_dark_color_names">
+        <item>Red 600</item>
+        <item>Red 700</item>
+        <item>Red 800</item>
+        <item>Red 900</item>
+
+        <item>Pink 600</item>
+        <item>Pink 700</item>
+        <item>Pink 800</item>
+        <item>Pink 900</item>
+
+        <item>Purple 600</item>
+        <item>Purple 700</item>
+        <item>Purple 800</item>
+        <item>Purple 900</item>
+
+        <item>Deep Purple 600</item>
+        <item>Deep Purple 700</item>
+        <item>Deep Purple 800</item>
+        <item>Deep Purple 900</item>
+
+        <item>Indigo 600</item>
+        <item>Indigo 700</item>
+        <item>Indigo 800</item>
+        <item>Indigo 900</item>
+
+        <item>Blue 600</item>
+        <item>Blue 700</item>
+        <item>Blue 800</item>
+        <item>Blue 900</item>
+
+        <item>Light Blue 600</item>
+        <item>Light Blue 700</item>
+        <item>Light Blue 800</item>
+        <item>Light Blue 900</item>
+
+        <item>Cyan 600</item>
+        <item>Cyan 700</item>
+        <item>Cyan 800</item>
+        <item>Cyan 900</item>
+
+        <item>Teal 600</item>
+        <item>Teal 700</item>
+        <item>Teal 800</item>
+        <item>Teal 900</item>
+
+        <item>Green 600</item>
+        <item>Green 700</item>
+        <item>Green 800</item>
+        <item>Green 900</item>
+
+        <item>Light Green 600</item>
+        <item>Light Green 700</item>
+        <item>Light Green 800</item>
+        <item>Light Green 900</item>
+
+        <item>Lime 600</item>
+        <item>Lime 700</item>
+        <item>Lime 800</item>
+        <item>Lime 900</item>
+
+        <item>Yellow 600</item>
+        <item>Yellow 700</item>
+        <item>Yellow 800</item>
+        <item>Yellow 900</item>
+
+        <item>Amber 600</item>
+        <item>Amber 700</item>
+        <item>Amber 800</item>
+        <item>Amber 900</item>
+
+        <item>Orange 600</item>
+        <item>Orange 700</item>
+        <item>Orange 800</item>
+        <item>Orange 900</item>
+
+        <item>Deep Orange 600</item>
+        <item>Deep Orange 700</item>
+        <item>Deep Orange 800</item>
+        <item>Deep Orange 900</item>
+
+        <item>Brown 600</item>
+        <item>Brown 700</item>
+        <item>Brown 800</item>
+        <item>Brown 900</item>
+
+        <item>Grey 600</item>
+        <item>Grey 700</item>
+        <item>Grey 800</item>
+        <item>Grey 900</item>
+
+        <item>Blue Grey 600</item>
+        <item>Blue Grey 700</item>
+        <item>Blue Grey 800</item>
+        <item>Blue Grey 900</item>
+
+    </string-array>
+
+    <!-- Primary Dark Color Names -->
+    <string-array name="primary_color_names">
+        <item>Red 100</item>
+        <item>Red 200</item>
+        <item>Red 300</item>
+        <item>Red 400</item>
+        <item>Red 500</item>
+
+        <item>Pink 100</item>
+        <item>Pink 200</item>
+        <item>Pink 300</item>
+        <item>Pink 400</item>
+        <item>Pink 500</item>
+
+        <item>Purple 100</item>
+        <item>Purple 200</item>
+        <item>Purple 300</item>
+        <item>Purple 400</item>
+        <item>Purple 500</item>
+
+        <item>Deep Purple 100</item>
+        <item>Deep Purple 200</item>
+        <item>Deep Purple 300</item>
+        <item>Deep Purple 400</item>
+        <item>Deep Purple 500</item>
+
+        <item>Indigo 100</item>
+        <item>Indigo 200</item>
+        <item>Indigo 300</item>
+        <item>Indigo 400</item>
+        <item>Indigo 500</item>
+
+        <item>Blue 100</item>
+        <item>Blue 200</item>
+        <item>Blue 300</item>
+        <item>Blue 400</item>
+        <item>Blue 500</item>
+
+        <item>Light Blue 100</item>
+        <item>Light Blue 200</item>
+        <item>Light Blue 300</item>
+        <item>Light Blue 400</item>
+        <item>Light Blue 500</item>
+
+        <item>Cyan 100</item>
+        <item>Cyan 200</item>
+        <item>Cyan 300</item>
+        <item>Cyan 400</item>
+        <item>Cyan 500</item>
+
+        <item>Teal 100</item>
+        <item>Teal 200</item>
+        <item>Teal 300</item>
+        <item>Teal 400</item>
+        <item>Teal 500</item>
+
+        <item>Green 100</item>
+        <item>Green 200</item>
+        <item>Green 300</item>
+        <item>Green 400</item>
+        <item>Green 500</item>
+
+        <item>Light Green 100</item>
+        <item>Light Green 200</item>
+        <item>Light Green 300</item>
+        <item>Light Green 400</item>
+        <item>Light Green 500</item>
+
+        <item>Lime 100</item>
+        <item>Lime 200</item>
+        <item>Lime 300</item>
+        <item>Lime 400</item>
+        <item>Lime 500</item>
+
+        <item>Yellow 100</item>
+        <item>Yellow 200</item>
+        <item>Yellow 300</item>
+        <item>Yellow 400</item>
+        <item>Yellow 500</item>
+
+        <item>Amber 100</item>
+        <item>Amber 200</item>
+        <item>Amber 300</item>
+        <item>Amber 400</item>
+        <item>Amber 500</item>
+
+        <item>Orange 100</item>
+        <item>Orange 200</item>
+        <item>Orange 300</item>
+        <item>Orange 400</item>
+        <item>Orange 500</item>
+
+        <item>Deep Orange 100</item>
+        <item>Deep Orange 200</item>
+        <item>Deep Orange 300</item>
+        <item>Deep Orange 400</item>
+        <item>Deep Orange 500</item>
+
+        <item>Brown 100</item>
+        <item>Brown 200</item>
+        <item>Brown 300</item>
+        <item>Brown 400</item>
+        <item>Brown 500</item>
+
+        <item>Grey 100</item>
+        <item>Grey 200</item>
+        <item>Grey 300</item>
+        <item>Grey 400</item>
+        <item>Grey 500</item>
+
+        <item>Blue Grey 100</item>
+        <item>Blue Grey 200</item>
+        <item>Blue Grey 300</item>
+        <item>Blue Grey 400</item>
+        <item>Blue Grey 500</item>
+
+    </string-array>
+
+    <!-- Primary Dark Color Names -->
+    <string-array name="accent_color_names">
+        <item>Red A100</item>
+        <item>Red A200</item>
+        <item>Red A400</item>
+        <item>Red A700</item>
+
+        <item>Pink A100</item>
+        <item>Pink A200</item>
+        <item>Pink A400</item>
+        <item>Pink A700</item>
+
+        <item>Purple A100</item>
+        <item>Purple A200</item>
+        <item>Purple A400</item>
+        <item>Purple A700</item>
+
+        <item>Deep Purple A100</item>
+        <item>Deep Purple A200</item>
+        <item>Deep Purple A400</item>
+        <item>Deep Purple A700</item>
+
+        <item>Indigo A100</item>
+        <item>Indigo A200</item>
+        <item>Indigo A400</item>
+        <item>Indigo A700</item>
+
+        <item>Blue A100</item>
+        <item>Blue A200</item>
+        <item>Blue A400</item>
+        <item>Blue A700</item>
+
+        <item>Light Blue A100</item>
+        <item>Light Blue A200</item>
+        <item>Light Blue A400</item>
+        <item>Light Blue A700</item>
+
+        <item>Cyan A100</item>
+        <item>Cyan A200</item>
+        <item>Cyan A400</item>
+        <item>Cyan A700</item>
+
+        <item>Teal A100</item>
+        <item>Teal A200</item>
+        <item>Teal A400</item>
+        <item>Teal A700</item>
+
+        <item>Green A100</item>
+        <item>Green A200</item>
+        <item>Green A400</item>
+        <item>Green A700</item>
+
+        <item>Light Green A100</item>
+        <item>Light Green A200</item>
+        <item>Light Green A400</item>
+        <item>Light Green A700</item>
+
+        <item>Lime A100</item>
+        <item>Lime A200</item>
+        <item>Lime A400</item>
+        <item>Lime A700</item>
+
+        <item>Yellow A100</item>
+        <item>Yellow A200</item>
+        <item>Yellow A400</item>
+        <item>Yellow A700</item>
+
+        <item>Amber A100</item>
+        <item>Amber A200</item>
+        <item>Amber A400</item>
+        <item>Amber A700</item>
+
+        <item>Orange A100</item>
+        <item>Orange A200</item>
+        <item>Orange A400</item>
+        <item>Orange A700</item>
+
+        <item>Deep Orange A100</item>
+        <item>Deep Orange A200</item>
+        <item>Deep Orange A400</item>
+        <item>Deep Orange A700</item>
+
+    </string-array>
+
+
 </resources>

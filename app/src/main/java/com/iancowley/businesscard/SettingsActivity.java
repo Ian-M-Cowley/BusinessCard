@@ -9,6 +9,10 @@ import com.iancowley.businesscard.databinding.ActivitySettingsBinding;
 
 import javax.inject.Inject;
 
+import static com.iancowley.businesscard.ColorSelectActivity.ACCENT_SELECT;
+import static com.iancowley.businesscard.ColorSelectActivity.PRIMARY_DARK_SELECT;
+import static com.iancowley.businesscard.ColorSelectActivity.PRIMARY_SELECT;
+
 public class SettingsActivity extends AppCompatActivity {
 
     @Inject ColorSettings colorSettings;
@@ -20,7 +24,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         ActivitySettingsBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_settings);
 
-
         binding.setColorSettings(colorSettings);
         binding.toolbar.setTitle(R.string.settings);
         setSupportActionBar(binding.toolbar);
@@ -28,7 +31,7 @@ public class SettingsActivity extends AppCompatActivity {
         binding.buttonPrimaryDark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                colorSettings.setPrimaryDarkColor(getResources().getColor(R.color.blue));
+                startActivity(ColorSelectActivity.newIntent(SettingsActivity.this, PRIMARY_DARK_SELECT));
             }
         });
 
@@ -36,7 +39,7 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                colorSettings.setPrimaryColor(getResources().getColor(R.color.blue));
+                startActivity(ColorSelectActivity.newIntent(SettingsActivity.this, PRIMARY_SELECT));
             }
         });
 
@@ -44,8 +47,14 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                colorSettings.setAccentColor(getResources().getColor(R.color.blue));
+                startActivity(ColorSelectActivity.newIntent(SettingsActivity.this, ACCENT_SELECT));
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(colorSettings.getPrimaryDarkColor());
     }
 }

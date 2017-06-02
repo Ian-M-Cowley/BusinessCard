@@ -32,6 +32,7 @@ public class BusinessCardActivity extends AppCompatActivity {
         ((BusinessCardApplication)getApplication()).getComponent().inject(this);
 
         ActivityBusinessCardBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_business_card);
+        getWindow().setStatusBarColor(colorSettings.getPrimaryDarkColor());
 
         businessCard = new BusinessCard.Builder()
                 .firstName(propertiesReader.getProperty(PROPERTY_FIRST_NAME))

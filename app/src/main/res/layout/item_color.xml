@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="int"/>
+
+        <variable
+            name="textColor"
+            type="int"/>
+
+        <variable
+            name="colorName"
+            type="String"/>
+    </data>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@{color}"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@{textColor}"
+            android:textSize="20sp"
+            android:text='@{String.format("%s - #%s", colorName, Integer.toHexString(color).toUpperCase().substring(2))}'
+            tools:text="#00FFFFFF"/>
+
+    </FrameLayout>
+</layout>

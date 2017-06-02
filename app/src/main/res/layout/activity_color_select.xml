@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="colorSettings"
+            type="com.iancowley.businesscard.ColorSettings"/>
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        tools:context="com.iancowley.businesscard.ColorSelectActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@{colorSettings.primaryColor}"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:title="@string/select_a_color"
+            android:elevation="10dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/color_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/color_recycler"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@drawable/ic_check_white_36dp"
+            app:fabBackground="@{colorSettings.accentColor}"/>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
