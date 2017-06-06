@@ -1,5 +1,7 @@
 package com.iancowley.businesscard;
 
+import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +18,10 @@ import static com.iancowley.businesscard.ColorSelectActivity.PRIMARY_SELECT;
 public class SettingsActivity extends AppCompatActivity {
 
     @Inject ColorSettings colorSettings;
+
+    public static Intent newIntent(Context caller) {
+        return new Intent(caller, SettingsActivity.class);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

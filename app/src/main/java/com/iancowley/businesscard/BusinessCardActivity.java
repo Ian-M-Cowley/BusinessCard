@@ -3,6 +3,7 @@ package com.iancowley.businesscard;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.iancowley.businesscard.databinding.ActivityBusinessCardBinding;
 import com.iancowley.businesscard.injection.PropertiesReader;
@@ -48,5 +49,12 @@ public class BusinessCardActivity extends AppCompatActivity {
         binding.setBusinessCard(businessCard);
         binding.setColorSettings(colorSettings);
         setSupportActionBar(binding.toolbar);
+
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(SettingsActivity.newIntent(BusinessCardActivity.this));
+            }
+        });
     }
 }
